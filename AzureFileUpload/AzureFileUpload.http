@@ -1,0 +1,27 @@
+@AzureFileUpload_HostAddress = http://localhost:5215
+
+GET {{AzureFileUpload_HostAddress}}/weatherforecast/GetWeatherForecast
+Accept: application/json
+
+POST {{AzureFileUpload_HostAddress}}/weatherforecast/blobUpload
+Accept: application/json
+
+GET {{AzureFileUpload_HostAddress}}/azureBlob/list
+Accept: application/json
+
+GET {{AzureFileUpload_HostAddress}}/azureBlob/download
+Accept: application/json
+
+POST {{AzureFileUpload_HostAddress}}/azureBlob/upload
+Accept: application/json
+
+POST {{AzureFileUpload_HostAddress}}/azureQueue/create
+Accept: application/json
+
+POST {{AzureFileUpload_HostAddress}}/azureQueue/send
+Accept: application/json
+
+GET {{AzureFileUpload_HostAddress}}/azureQueue/recive
+Accept: application/json
+
+###
